@@ -40,14 +40,19 @@ class LocationDetail extends StatelessWidget {
             textAlign: TextAlign.left,
             style: TextStyle(
               fontSize: 25.0,
-              color: Colors.black,
+              color: Colors.black, 
             )));
   }
 
   Widget _sectionText(String text) {
     return Container(
         padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
-        child: Text(text));
+        child: Text(text,
+        style: TextStyle(
+          color:Colors.black45,
+          fontSize: 17.0,
+          )
+          ));
   }
 
   Widget _bannerImage(String url, double height) {
